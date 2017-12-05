@@ -6,15 +6,23 @@ This collection of scripts will allow you to train a TensorFlow model using CERT
 
 ## How
 
-1. Scrape all PDF documents from the Web site, using `scrape.py`.
+1. Extract `CERT*ACT*.txt` files from official archives:
+[https://www.cert.ssi.gouv.fr/tar/2004.tar](https://www.cert.ssi.gouv.fr/tar/2004.tar)
+[https://www.cert.ssi.gouv.fr/tar/2005.tar](https://www.cert.ssi.gouv.fr/tar/2005.tar)
+[https://www.cert.ssi.gouv.fr/tar/2006.tar](https://www.cert.ssi.gouv.fr/tar/2006.tar)
+[https://www.cert.ssi.gouv.fr/tar/2007.tar](https://www.cert.ssi.gouv.fr/tar/2007.tar)
+[https://www.cert.ssi.gouv.fr/tar/2008.tar](https://www.cert.ssi.gouv.fr/tar/2008.tar)
+[https://www.cert.ssi.gouv.fr/tar/2009.tar](https://www.cert.ssi.gouv.fr/tar/2009.tar)
+[https://www.cert.ssi.gouv.fr/tar/2010.tar](https://www.cert.ssi.gouv.fr/tar/2010.tar)
+[https://www.cert.ssi.gouv.fr/tar/2011.tar](https://www.cert.ssi.gouv.fr/tar/2011.tar)
+[https://www.cert.ssi.gouv.fr/tar/2012.tar](https://www.cert.ssi.gouv.fr/tar/2012.tar)
+[https://www.cert.ssi.gouv.fr/tar/2013.tar](https://www.cert.ssi.gouv.fr/tar/2013.tar)
+[https://www.cert.ssi.gouv.fr/tar/2014.tar](https://www.cert.ssi.gouv.fr/tar/2014.tar)
+[https://www.cert.ssi.gouv.fr/tar/2015.tar](https://www.cert.ssi.gouv.fr/tar/2015.tar)
+[https://www.cert.ssi.gouv.fr/tar/2016.tar](https://www.cert.ssi.gouv.fr/tar/2016.tar)
+[https://www.cert.ssi.gouv.fr/tar/2017.tar](https://www.cert.ssi.gouv.fr/tar/2017.tar)
 
-Files are saved in the current directory. The default time period is 2013-2017.
-
-2. Convert all PDF documents into plain ASCII files using `convert.py`.
-
-This script will first shell out to the `pdf2txt` command, then simplify the resulting UTF-8 document into plain ASCII.
-
-**Please note that you should only use this command against trusted files.**
+2. Convert all text files into plain ASCII files using `convert.py`.
 
 3. Checkout a slightly modified version of [Martin Gorner's](https://github.com/martin-gorner/tensorflow-rnn-shakespeare) excellent TensorFlow tutorial.
 ```
